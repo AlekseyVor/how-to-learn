@@ -7,19 +7,134 @@
   margin: 0 auto;
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 100%;
 }
-
+div {
+  border: 1px solid red;
+}
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  display: flex;
+  position: relative;
+  margin-bottom: 100px;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto;
+}
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+.digits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px auto;
+}
+.table {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.section-title {
+  width: 60%;
+  margin-bottom: 20px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.feynman {
+  background-color: #f2f2f2;
+  display: flex;
+  height: 790px;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
+
+
+
+.footer {
+  min-height: 350px;
+}
+.logo_place_header {
+  top: 30px;
+  left: 64px;
+  width: 183px;
+  height: 32px;
+  background-image: url(../images/logo_place_header.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 2;
+}
+.header__title {
+  left: 64px;
+  width: 730px;
+  align-self: center;
+  position: absolute;
+  font-size: 102px;
+  font-weight: bold;
+  line-height: 96px;
+  z-index: 2;
+}
+.header__subtitle {
+  left: 64px;
+  bottom: 30px;
+  width: 388px;
+  position: absolute;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 25px;
+  z-index: 2;
+}
+.header__main-illustration {
+  bottom: 0px;
+  right: 0px;
+  width: 765px;
+  height: 608px;
+  background-image: url(../images/header-image.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+.header__link {
+  text-decoration: none;
+  color: #2f80ed;
+}
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
+  top: 64px;
+  right: 0px;
   height: 568px;
   width: 568px;
+  position: absolute;
+  background-color: #2f80ed;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -29,3 +144,87 @@
   margin-right: 0;
   margin-top: 80px;
 }
+.two-columns__brief {
+  width: 175px;
+}
+.two-columns__brief-text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+.two-columns__main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  min-width: 784px;
+}
+.two-columns__paragraph-text {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.two-columns__span-accent {
+  font-weight: bold;
+}
+.table__cell {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.table__heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+.feynman__title {
+  margin-top: 100px;
+  position: static;
+  z-index: 2;
+  width: 648px;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+}
+.feynman__title-text {
+
+}
+.feynman__subtitle {
+  margin-top: 70px;
+  position: static;
+  z-index: 4;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+.feynman__img {
+  position: absolute;
+  width: 867px;
+  height: 637px;
+  bottom: 0px;
+  left: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../images/feynman.png);
+  z-index: 1;
+}
+.feynman__link {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+}
+.page_margin-bottom_s {
+  margin-bottom: 20px;
+}
+.page_margin-bottom_m {
+  margin-bottom: 30px;
+}
+
