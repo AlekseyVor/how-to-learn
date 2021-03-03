@@ -140,15 +140,13 @@
 }
 
 .header__title {
-  left: 64px;
+  margin: 0 0 0 64px;
   width: 730px;
   align-self: center;
-  position: absolute;
   font-size: 102px;
   font-weight: bold;
   line-height: 96px;
   z-index: 2;
-  margin: 0;
   padding: 0;
 }
 .header__subtitle {
