@@ -1,6 +1,7 @@
 .video__iframe {
   margin-right: 20px;
   padding: 0px;
+  border: 0px;
 }
 .video__iframe:last-of-type {
   margin-right: 0px;
